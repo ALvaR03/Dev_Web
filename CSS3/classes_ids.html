@@ -2,7 +2,7 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
-		<title>Inline Style</title>
+		<title>Classes ids</title>
 
 		<!--Internal style sheet e quando declaramos uma formatacao entre a tag head da pagina -->	
 		<style type="text/css" media="screen">
@@ -13,14 +13,22 @@
 			h1 {
 				color: blue;
 			}
+		/* classe */
+			.azul {
+				color: blue;
+			}
+
+			#principal {
+				background: gray;	
+			}
 
 		</style>
 	</head>
-	<body>
+	<body id="principal">
 
 		<h1>Estilo CSS (cascading style sheets)</h1>
 		<!-- Inline style sheet e quando declaramos uma formatacao dentro da tag -->
-		<p>
+		<p class="azul">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tristique, 
 			velit quis interdum commodo, metus massa pharetra lectus, ut congue felis arcu at ex. 
 			Sed sit amet mi id felis vehicula luctus sed sit amet mauris. Vivamus vel tincidunt nulla, 
