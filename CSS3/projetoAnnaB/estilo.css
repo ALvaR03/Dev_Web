@@ -19,6 +19,10 @@ body {
 	padding: 10px;
 }
 
+#rodape {
+	text-align: center;
+}
+
 a {
 	color: #4b566a;
 	text-decoration: none;
@@ -28,4 +32,13 @@ a {
 
 .centralizar {
 	text-align: center;
+}
+
+.img-campanha {
+	border: 10px solid #c3c3ae;
+}
+
+h1 {
+	color: #828271;
+	font-size: 1.2em;	
 }

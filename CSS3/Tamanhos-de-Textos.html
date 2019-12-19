@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Tamanhos de Texto</title>
+
+		<!--Internal style sheet e quando declaramos uma formatacao entre a tag head da pagina -->	
+		<style type="text/css" media="screen">
+
+			body {
+				font-size: 30px;
+			}
+
+			div{
+				font-size: 60px;
+
+			}
+
+			.texto {
+				/* 
+				   px -> tamanho fixo 
+				   % -> tamanho ralativo
+				   em -> tamanho relativo ao conteiner pai
+					font-size: 30px;
+				 */
+				font-size: 1em;
+			}
+
+			.texto {
+				font-size: 15px;
+			}
+
+		</style>
+	</head>
+	<body>
+
+		<div>
+			<p class="texto">Conteudo 1</p>
+			<p class="texto2">Conteudo 2</p>
+		</div>
+
+	</body>
+</html>
