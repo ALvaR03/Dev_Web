@@ -1,4 +1,4 @@
-/*Limpar formatações padrão.*/
+/*Limpar formatações padrão do navegador*/
 * {
 	margin: 0;
 	padding: 0;
@@ -11,7 +11,7 @@ body {
 }
 
 /*
-**** Layout ****
+**** Formatacao do Layout ****
 */
 #area-cabecalho {
 	background-color: #f7b600;
@@ -58,14 +58,14 @@ body {
 }
 
 #rodape {
-	clear: both;
+	clear: both; /* Remover o fluxo dos elementos flutuantes */
 	text-align: center;
 	padding: 15px;
 	background: #CCC;
 }
 
 /*
-**** Formatação do menu ****
+**** Formatação do menu inicial ****
 */
 a {
 	text-decoration: none;	
@@ -76,10 +76,10 @@ a:link, a:visited {
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: underline; /* houver para quando passar o mouse e o item realizar uma acao*/
 }
 
-#area-cabecalho a:link, #area-cabecalho a:visited {
+#area-cabecalho a:link, #area-cabecalho a:visited { /* Seletores para formatar um link especifico da pagina*/
 	color: #FFF;
 	padding: 8px 12px;
 }
