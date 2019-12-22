@@ -51,9 +51,9 @@ h1+p {
  }
 
  #conteiner {
-	 width: 85%;		/* 720px */
+	 width: 960px;		/* 720px -> layout fixo | 85% layout -> liquido */
 	 margin: 0 auto;
-	 background: #fff;
+	 background: #fff url(../_imagens/coluna.png) repeat-y left top;
 	 min-width: 820px;
 	 max-width: 1280px;
  }
@@ -74,7 +74,6 @@ h1+p {
 */
 
 #conteudo {
-	 border: 1px solid red;
 	 width: 75%;  /* 520px -> 74.28 */
 	 float: right;
 }
@@ -84,7 +83,7 @@ h1+p {
 	 float: left;
 	 padding-top: 20px;
 	 padding-bottom: 20px;
-	 background: #d1d1d1;
+	 /*background: #d1d1d1;*/
 }
 
  #conteudo-principal {
