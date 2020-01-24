@@ -1,5 +1,6 @@
 //Inicio
 
+var nao tem como;
 var nome = prompt('Digite seu nome:');
 var altura = prompt('Altura sem ponto e nem virgula:');
 var peso = prompt('Peso em quilos: ');
