@@ -1,0 +1,55 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#infos {
+    margin: 20px;
+    padding: 20px;
+}
+
+h1.main-title {
+    color: cornflowerblue;
+}
+
+fieldset {
+    margin-left: 40px;
+    width: 800px;
+}
+
+legend {
+    font-size: 20px;
+}
+
+label.field {
+    text-align: right;
+    width: 100px;
+    float: left;
+    font-weight: bold;
+}
+
+/* at progress */
+button, p.pButton {
+    text-align: right;
+    float: left;
+    font-weight: bold;
+}
+
+input[type=email] {
+    width: 500px;
+}
+
+input[type=text] {
+    width: 500px;
+}
+
+fieldset p {
+    clear: both;
+    padding: 5px;
+}
+
+footer {
+    margin: 50px;
+    text-align: center;
+}
