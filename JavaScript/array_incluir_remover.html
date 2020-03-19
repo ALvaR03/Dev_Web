@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array Incluindo e Removendo</title>
+
+        <script>
+            
+            var lista_frutas = Array();
+
+            lista_frutas[0] = "Mamao";
+            lista_frutas[1] = "Uva";
+            lista_frutas[2] = "Melao";
+            lista_frutas[3] = "Buriti";
+
+            //incluir um elemento no final do array
+            /*lista_frutas.push("Maracujar");*/
+
+            //incluir um elemento no inicio do array
+            /*lista_frutas.unshift("Morango");*/
+
+            //excluir um elemento do final do array
+            //lista_frutas.pop();
+
+            //excluir um elemento do inicio do array
+            lista_frutas.shift();
+
+            console.log(lista_frutas);
+
+            function acao1() {
+                alert("Seu teimoso!!!");
+            }
+
+            function acao2() {
+                alert("Tu que e tu que deixa!!");
+            }
+
+        </script>
+
+        <style>
+
+            div.passaMouse {
+                height: 150px;
+                width: 150px;
+                border: 1px double blue;
+                background-color: greenyellow;
+                text-align: center;
+                margin: auto;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        
+        <h2>JavaScript Powered</h2>
+
+        <label for=""> 
+            <input onclick="acao1()" type="checkbox"/>
+            Nao Marque essa caixa!!
+        </label>
+
+        <br/> <br/> <br/>
+        <div onmouseout="acao2()" class="passaMouse">
+            <p>Tu e mano?</p>
+        </div>
+
+    </body>
+</html>

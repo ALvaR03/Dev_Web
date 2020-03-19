@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pesquisa no array</title>
+
+        <script type="text/javascript">
+
+            var lista_frutas = Array();
+
+            lista_frutas[0] = "Morango";
+            lista_frutas[1] = "Banana";
+            lista_frutas[2] = "Abacati";
+            lista_frutas[3] = "Uva";
+
+            var varificar = lista_frutas.indexOf("Uva");
+
+            if(varificar === -1) {
+                document.write("Elemento nao existe");
+            } else {
+                document.write("Elemento existe e esta na posicao " + varificar);
+                //myAlert("Alvaro", "21");
+            }
+
+
+/*
+            function myAlert(name, age) {
+            document.write("<br/>Hi, my name is " + name + " and i have " + age + " old!");
+            }
+
+            function meuCalculo(a, b) {
+
+                var num1 = prompt("Primeiro numero para soma:");
+                var num2 = prompt("Segundo numero para soma: ");
+
+                var resultado = parseInt(num1) + parseInt(num2);
+
+                return resultado;
+            }
+
+            document.write("<br/>O resultado do calculo e: " + meuCalculo(100, 25));
+            
+            */
+
+/*
+            var usuario = prompt("Digite o seu nome"); 
+            document.write("<br/>O nome do usuario e: " + usuario);
+            //alert(usuario);
+            */
+
+
+            function soma() {
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+            var result = 0;
+
+
+               result = num1 + num2;
+                document.getElementById("re").innerHTML= result;
+            }
+
+            //Objetos Javascript 
+
+            var pessoa = {
+                nome: "Alvaro", 
+                idade: 21,
+                corFavirita: "Amarelo",
+                peso: 50
+            };
+
+            var atb = pessoa.corFavirita;
+            var atb2 = pessoa["idade"];
+
+            var curso = {
+                nome: "JavaScript",
+                lisao: "41"
+            };
+
+            document.write("<br/>" + curso.nome.length);
+
+        </script>
+
+    </head>
+    <body>
+        <h2>Elementos no Array</h2>
+
+
+        <h1>Soma de dois numeros pelo DOM</h1>
+
+        <label for="">Primeiro Numero:</label>
+        <input type="text" id="num1"><br/><br/>
+
+        <label for="">Segundo Numero:</label>
+        <input type="text" id="num2"><br/><br/>
+
+        <button onclick="soma()">Somar</button><br/><br/>
+
+        <label for="">Resultado</label>
+        <h2 id="re"></h2>
+
+    </body>
+</html>

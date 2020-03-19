@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Array no JavaScript</title>
+
+        <script>
+
+/*            var lista_frutas = Array();
+
+            lista_frutas[0] = 'Banana';
+            lista_frutas[1] = 'Maca';
+            lista_frutas[2] = 'Morango';
+            lista_frutas[3] = 'Uva';
+
+            console.log(lista_frutas); - Exemplo de um array */
+
+            var lista_coisas = Array(); 
+            lista_coisas['frutas'] = Array("Banana", "Abacaxi", "Abacati", "Cereja");
+            lista_coisas['verduras'] = Array("Alface", "Cebola", "Cenoura", "Beterraba");
+            lista_coisas['pessoas'] = []; //Array("Joao", "Maria", "Jose");
+
+            lista_coisas['pessoas']['a'] = 'Joao';
+            lista_coisas['pessoas']['b'] = '<h1>Faustao</h1>';
+            lista_coisas['pessoas']['c'] = 'Jose';
+
+            /*lista_coisas['frutas'][0] = 'Banana';
+            lista_coisas['frutas'][1] = 'Abacati';
+            lista_coisas['frutas'][2] = 'Abacaxi';
+            lista_coisas['frutas'][3] = 'Cereja';*/
+
+            /*lista_coisas['verduras'] = Array();
+            lista_coisas['verduras'][0] = 'Alface';
+            lista_coisas['verduras'][1] = 'Cebola';
+            lista_coisas['verduras'][2] = 'Cenoura';
+            lista_coisas['verduras'][3] = 'Baterraba';*/
+    
+            document.write(lista_coisas['pessoas']['b']); //Recuperando o dado e mostrando ele no browser
+            document.write(lista_coisas['frutas'][1]); //Recuperando o dado e mostrando ele no browser
+            console.log(lista_coisas);
+
+            var diaSemana = 1;
+
+            switch (diaSemana) {
+                case 1:
+                   document.write("<br/><br/> Segunda-feira");
+                    break;
+            
+                case 2:
+                   document.write("Terca-feira");
+                    break;
+
+                case 3:
+                   document.write("Quarta-feira");
+                    break;
+
+                default:
+                   document.write("Outro dia ae!!!");
+                    break;
+            }
+
+            document.write("<br/>|=================================|<br/>");
+
+
+
+
+        </script>
+
+    </head>
+    <body>
+        
+    </body>
+</html>
