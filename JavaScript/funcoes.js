@@ -1,4 +1,5 @@
 //Inicio 
+/* -==-==--=-=-     exemplo de funcao   -=-=-=-=-=----= 
 
 //A funcao pode ser de dois tipos 'void' e 'retorno'
 
@@ -19,3 +20,16 @@ var comprimento = prompt('Digite a comprimento do terreno em metros');
         var area = calcularAreaTerreno(largura, comprimento);
 
             document.write('O terreno possui ' + area + ' metros quadrados');
+=-=-=-=-=-=-=-=-==-=--=-==-==-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-==-=-=-=*/
+
+
+    function soma() {
+        var resultado = 0
+        for (var i in arguments) {
+            resultado += arguments[i]
+        }
+
+        return resultado
+    }
+
+    console.log(soma(3, 5, 3.70, 21, 'NaoTemComo'))
