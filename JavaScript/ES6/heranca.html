@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Heranca</title>
+
+        <script>
+
+            class Animal {
+                constructor() {
+                    this.cor = '';
+                    this.tamanho = null;
+                }
+
+                dormir() {
+                    console.log('Dormir');
+                }
+
+            }
+
+
+            class Cachorro extends Animal {
+
+                constructor() {
+                    super();
+                    this.orelhas = 'Grandes e caidas'
+                }
+
+                correr() {
+                    console.log('correr');
+                }
+
+                rosnar() {
+                    console.log('rosnar');
+                }
+            }
+
+            class Passaro extends Animal {
+                constructor() {
+                    super();
+                    this.bico = 'Curto';
+                }
+
+                voar() {
+                    console.log('voar');
+                }
+
+            }
+
+
+            class Papagaio extends Passaro {
+                constructor() {
+                    super();
+                    this.bico = 'Medio';
+                    this.sabeFalar = true;
+                }
+
+                falar() {
+                    console.log("falar");
+                }
+
+
+            }
+
+
+
+            let meuCachorro = new Cachorro();
+            let meuPassaro = new Passaro();
+            let seuPapagaio = new Papagaio();
+
+
+            meuCachorro.dormir();
+            meuPassaro.dormir();
+            seuPapagaio.falar();
+            seuPapagaio.dormir();
+
+        </script>
+
+        
+    </head>
+    <body>
+        
+    </body>
+</html>

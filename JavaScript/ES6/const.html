@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> 
+
+
+        <script type="text/babel">
+
+            function calcular() {
+
+                var num1 = Number(document.getElementById("num1").value);
+                var num2 = Number(document.getElementById("num2").value);
+                var elemResult = document.getElementById("resulrado");
+
+                if (elemResult.textContent === undefined) {
+                    elemResult.textContent = "O resultado e " + String(num1 + num2) + ".";
+                } else {
+                    elemResult.innerHTML = "O resultado e " + String(num1 + num2) + ".";
+                }
+
+
+            }
+
+        </script>
+
+        <title>ES6</title>
+    </head>
+    <body>
+
+        <div id="output"></div>
+        <input type="text" id="num1" onblur="calcular();">
+        <input type="text" id="num2" onblur="calcular();">
+        <input type="text" id="result">
+        
+    </body>
+</html>
