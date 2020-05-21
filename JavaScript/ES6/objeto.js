@@ -31,4 +31,3 @@ class Calculadora {
 
 Calculadora = new Calculadora()
 Calculadora.calcular()
-
