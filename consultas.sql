@@ -125,3 +125,20 @@ group by
 	estado
 having
 	estado in('MG', 'SP') and total_de_registros_por_estado >= 5;
+
+/*Update - Atualizando registros*/
+update curso_web_db.tb_alunos set nome = 'Joao' where id_aluno = 13;
+update curso_web_db.tb_alunos set interesse = 'Saude' where idade >= 80;
+update 
+	curso_web_db.tb_alunos
+set 
+	nome = 'Lima', idade = 25, email = 'lima@gmail.com'
+where 
+	id_aluno = 18;
+/*+++*/
+update 
+	curso_web_db.tb_alunos
+set 
+	nome = 'Maria';
+where 
+	idade between 18 and 25 and estado = 'PA';
