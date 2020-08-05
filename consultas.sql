@@ -97,3 +97,15 @@ where
 /* select - Funcao de agregacao parte2: sum e count */
 select sum(investimento) from curso_web_db.tb_alunos; 
 select sum(investimento) from curso_web_db.tb_alunos where ativo = true; 
+select count(*) from curso_web_db.tb_alunos where ativo = true; 
+
+/*select - Agrupando selecao de registros (Group By)*/
+select * from curso_web_db.tb_alunos where interesse = 'Jogos'; 
+select * from curso_web_db.tb_alunos group by interesse; 
+select interesse, count(*) from curso_web_db.tb_alunos group by interesse;
+select interesse, count(*) as total_por_interesse from curso_web_db.tb_alunos group by interesse;
+select estado, count(*) as total_por_estado from curso_web_db.tb_alunos group by estado;
+select * from curso_web_db.tb_alunos where estado = 'AM';
+
+/*select - Filtrando selecoes agrupadas (Having)*/
+
