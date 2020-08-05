@@ -108,4 +108,20 @@ select estado, count(*) as total_por_estado from curso_web_db.tb_alunos group by
 select * from curso_web_db.tb_alunos where estado = 'AM';
 
 /*select - Filtrando selecoes agrupadas (Having)*/
+select 
+	estado, count(*) as total_de_registros_por_estado
+from 
+	curso_web_db.tb_alunos 
+group by 
+	estado
+having
+	total_de_registros_por_estado	>= 5;
 
+select 
+	estado, count(*) as total_de_registros_por_estado
+from 
+	curso_web_db.tb_alunos 
+group by 
+	estado
+having
+	estado in('MG', 'SP') and total_de_registros_por_estado >= 5;
