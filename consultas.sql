@@ -73,4 +73,27 @@ select * from curso_web_db.tb_alunos limit 8, 4;
 
 
 /*select - funcoes de agregacao parte 1 - max, min e avg*/
+select 
+	min(investimento)
+from 
+	curso_web_db.tb_alunos;
+where 
+	ativo = true;
 
+select 
+	max(investimento)
+from 
+	curso_web_db.tb_alunos;
+where 
+	ativo = true;
+
+select 
+	avg(investimento)
+from 
+	curso_web_db.tb_alunos;
+where 
+	ativo = true;
+
+/* select - Funcao de agregacao parte2: sum e count */
+select sum(investimento) from curso_web_db.tb_alunos; 
+select sum(investimento) from curso_web_db.tb_alunos where ativo = true; 
