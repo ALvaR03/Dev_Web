@@ -26,6 +26,7 @@ INSERT INTO tb_descricoes_tecnicas(id_produto, descricao_tecnica) VALUES (2, 'A 
 
 INSERT INTO tb_descricoes_tecnicas(id_produto, descricao_tecnica) VALUES (3, 'Saia da mesmice. O smartphone LG está mais divertido, rápido, fácil, cheio de selfies e com tela HD de incríveis 5,3"...');
 
+/* Relacionamento de Um para Muitos */
 create table tb_imagem (
 	id_imagem int not null primary key auto_increment,
 	id_produto int not null,
@@ -44,3 +45,33 @@ insert into tb_imagem(id_produto, url_imagem) values
 
 insert into tb_imagem(id_produto, url_imagem) values 
 (3, 'smartphone_1.jpg');
+
+/* Relacionamento de Muitos para Muitos */
+create table tb_clientes (
+	id_cliente int not null primary key auto_increment,
+	nome varchar(100) not null,
+	idade int(3) not null
+);
+
+create table tb_pedidos (
+	id_pedido int not null primary key auto_increment,
+	id_cliente int not null,
+	foreign key(id_cliente) references tb_clientes(id_cliente),
+	data_hora datetime not null default current_timestamp
+);
+
+create table tb_pedidos_produtos (
+	id_pedido int not null,
+	id_produto int not null,
+	foreign key(id_pedido) references tb_pedidos(id_pedido),
+	foreign key(id_produto) references tb_produtos(id_produto)
+);
+
+insert into tb_clientes(nome, idade) values ('Jorge', 29);
+insert into tb_pedidos(id_cliente) values (1);
+insert into tb_pedidos_produtos(id_pedido, id_produto) values (1, 2);
+insert into tb_pedidos(id_cliente) values (1); 
+insert into tb_pedidos_produtos(id_pedido, id_produto,) values (2, 3);
+insert into tb_clientes(nome, idade) values ('Jamilton', 30);
+insert into tb_pedidos(id_cliente) values (2);
+insert into tb_pedidos_produtos(id_pedido, id_produto) values (3, 1);
