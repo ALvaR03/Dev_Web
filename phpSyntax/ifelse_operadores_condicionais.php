@@ -8,12 +8,28 @@
 		<?php
 
 			//==
+			//===
+			//!= ou <>
+			//!==
+			// <
+			// >
+			// <=
+			// >=
 
 			if(2 == 3) {
 				echo 'Verdadeiro';	
 			} else {
 				echo 'Falso';	
 			}
+
+			//operedores logicos - &&, ||, 
+			// XOR -> retorna verdadeiro se uma das expressoes for verdadeira e a outra falsa
+			if(2 == 4  10 > 3) {
+				echo 'Verdadeiro';	
+			} else {
+				echo 'Falso';	
+			}
+			
 
 		?>
 
