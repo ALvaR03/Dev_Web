@@ -21,6 +21,7 @@
 			echo gettype($valor2);
 
 		?>
+
 		
 	</body>
 </html>
