@@ -1,4 +1,4 @@
-# uriSql.sql
+-- soUBasicoSql.sql
 
 CREATE TABLE tb_cursos(
     id_curso INT NOT NULL,    
@@ -52,5 +52,39 @@ SELECT * FROM tb_alunos WHERE interesse = 'Jogos' AND idade > 45 AND estado = 'R
 SELECT * FROM tb_alunos WHERE interesse = 'Jogos' OR idade > 45;
 
 
-/* SELECT - Filtros com o operador */
+/* SELECT - Filtros com o operador BETWEEN*/
+SELECT * FROM tb_alunos WHERE idade BETWEEN 18 AND 25;
 
+
+/* SELECT - Filtros com o operador IN*/
+-- De maneira nao simple
+SELECT * FROM tb_alunos WHERE interesse = 'Jogos' OR interesse = 'Esporte' OR interesse = 'Musica';
+
+-- De maneira mais simples
+SELECT * FROM tb_alunos WHERE interesse IN('Jogos', 'Esporte', 'Musica');
+
+/* SELECT - Filtros com o operador LIKE */
+-- "%" > Indica que pode haver a existencia de qualquel conjunto de caracter de texto
+-- "_" > Indica que porde haver a existencia de um ou mais caracteres em uma posicao especifica do texto
+
+SELECT * FROM tb_alunos WHERE nome LIKE '%e';
+SELECT * FROM tb_alunos WHERE nome LIKE '%ne';
+SELECT * FROM tb_alunos WHERE nome LIKE '%a%';
+SELECT * FROM tb_alunos WHERE nome LIKE 'C%';
+
+SELECT * FROM tb_alunos WHERE nome LIKE '_riel';
+SELECT * FROM tb_alunos WHERE nome LIKE '_ru_';
+SELECT * FROM tb_alunos WHERE nome LIKE 'I__';
+
+SELECT * FROM tb_alunos WHERE nome LIKE '%tt_';
+
+/* SELECT - Ordenando resultado */
+SELECT * FROM tb_alunos WHERE idade BETWEEN 18 AND 59 ORDER BY nome ASC;
+SELECT * FROM tb_alunos WHERE idade BETWEEN 18 AND 59 ORDER BY nome ASC, idade DESC, estado ASC;
+
+/* SELECT - Limitando retorno */
+SELECT * FROM tb_alunos LIMIT 25;
+SELECT * FROM tb_alunos ORDER BY id_aluno DESC LIMIT 25;
+SELECT * FROM tb_alunos LIMIT 4 OFFSET 0;
+SELECT * FROM tb_alunos LIMIT 8 OFFSET 4;
+SELECT * FROM tb_alunos LIMIT 8,4;
