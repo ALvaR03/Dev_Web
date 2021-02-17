@@ -39,6 +39,18 @@ SELECT <colunas> FROM <tabela>;
 SELECT carga_horaria, resumo FROM tb_cursos;
 SELECT * FROM tb_cursos; -- Para trazer todas as colunas
 
-/* Filtrando registros (WHERE) */
-SELECT 
+/* SELECT - Filtrando registros (WHERE) */
+SELECT * FROM tb_alunos WHERE interesse = 'Jogos';
+SELECT * FROM tb_alunos WHERE idade < 25;
+SELECT * FROM tb_alunos WHERE idade > 25;
+SELECT * FROM tb_alunos WHERE idade <= 25;
+SELECT * FROM tb_alunos WHERE idade >= 25;
+
+/* SELECT - Filtro com operadores logicos */
+SELECT * FROM tb_alunos WHERE interesse = 'Jogos' AND idade > 45;
+SELECT * FROM tb_alunos WHERE interesse = 'Jogos' AND idade > 45 AND estado = 'RN';
+SELECT * FROM tb_alunos WHERE interesse = 'Jogos' OR idade > 45;
+
+
+/* SELECT - Filtros com o operador */
 
