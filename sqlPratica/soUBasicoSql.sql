@@ -88,3 +88,15 @@ SELECT * FROM tb_alunos ORDER BY id_aluno DESC LIMIT 25;
 SELECT * FROM tb_alunos LIMIT 4 OFFSET 0;
 SELECT * FROM tb_alunos LIMIT 8 OFFSET 4;
 SELECT * FROM tb_alunos LIMIT 8,4;
+
+/* SELECT - Funcoes de agregacao parte 1: MAX, MIN e AVG */
+-- Traz o menor valor 
+SELECT MIN(investimento) FROM tb_cursos;
+SELECT MIN(investimento) FROM tb_cursos WHERE ativo = TRUE;
+
+-- Traz o maior valor
+SELECT MAX(investimento) FROM tb_cursos WHERE ativo = TRUE;
+
+-- Traz a media
+SELECT AVG(investimento) FROM tb_cursos WHERE ativo = TRUE;
+
