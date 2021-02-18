@@ -99,4 +99,5 @@ SELECT MAX(investimento) FROM tb_cursos WHERE ativo = TRUE;
 
 -- Traz a media
 SELECT AVG(investimento) FROM tb_cursos WHERE ativo = TRUE;
+SELECT AVG(horas) FROM tb_cursos WHERE ativo = TRUE;
 
