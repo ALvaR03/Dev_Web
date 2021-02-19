@@ -100,3 +100,11 @@ SELECT MAX(investimento) FROM tb_cursos WHERE ativo = TRUE;
 -- Traz a media
 SELECT AVG(investimento) FROM tb_cursos WHERE ativo = TRUE;
 
+
+/* SELECT - Funcoes de agregacao parte 2: SUM e COUNT */
+-- Retorna a soma dos valores de todos os registros com base em uma coluna
+SELECT SUM(investimento) FROM tb_cursos WHERE ativo = TRUE
+
+-- Retorna a quantidade de todos os registros de uma tabela
+SELECT COUNT(*) FROM tb_cursos WHERE ativo = TRUE
+SELECT COUNT(*) FROM tb_cursos WHERE ativo = FALSE
