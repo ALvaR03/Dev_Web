@@ -110,3 +110,10 @@ SELECT SUM(investimento) FROM tb_cursos WHERE ativo = false
 -- Retorna a quantidade de todos os registros de uma tabela
 SELECT COUNT(*) FROM tb_cursos WHERE ativo = TRUE
 SELECT COUNT(*) FROM tb_cursos WHERE ativo = FALSE
+
+/* SELECT - Agrupando selecao de registros (GROUP BY)*/
+SELECT * FROM tb_cursos GROUP BY interece;
+SELECT *, COUNT(*) AS total_por_interece FROM tb_cursos GROUP BY interece;
+SELECT estado, count(*) AS total_por_estado FROM tb_cursos GROUP BY estado;
+
+
