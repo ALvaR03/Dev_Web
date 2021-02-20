@@ -24,7 +24,7 @@
 
 			//operedores logicos - &&, ||, 
 			// XOR -> retorna verdadeiro se uma das expressoes for verdadeira e a outra falsa
-			if(2 == 4  10 > 3) {
+			if(2 == 4 XOR 10 > 3) {
 				echo 'Verdadeiro';	
 			} else {
 				echo 'Falso';	
