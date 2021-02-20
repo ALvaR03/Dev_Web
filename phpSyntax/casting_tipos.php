@@ -10,8 +10,14 @@
 			
 			//gettype() => retorna o tipo davariavel
 			$valor = 10;
-			//$valor2 = (float) $valor; // float, double, real 
-			//$valor2 = (string) $valor;
+			/*
+			$valor2 = (real) $valor; // float, double, real
+			$valor2 = (string) $valor;
+
+
+			$valor2 = (float) $valor; // float, double, real 
+			$valor2 = (string) $valor;
+			*/
 		
 			//$valor2 = (int) $valor; 
 			$valor2 = (string) $valor;
