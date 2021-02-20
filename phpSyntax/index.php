@@ -7,18 +7,15 @@
 	<body>
 		<?php
 
+			$idade = 14;
+			$peso = 30;
 
-			$usuario_possui_cartao_loja = true;
-			$valor_compra = 225;
-
-			$valor_frete = 50;
-
-			$recebeu_deconto_frete = false;
-
-			if($usuario_possui_cartao_loja == true && $valor_compra >= 100) {
-				$valor_frete = 0;
-				$recebeu_deconto_frete = true;
+			if ($idade > 16 && $idade < 69 && $peso >= 50) {
+				echo "Atende aos requisitos";
+			} else {
+				echo "Nao atente aos requisitos";
 			}
+
 		?>
 
 		<h1>Detalhes do pedido</h1>
