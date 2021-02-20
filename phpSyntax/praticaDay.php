@@ -1,9 +1,10 @@
 <?php
 
-$raio = (float)readline();
-$n = 3.14159;
-$area = $n * pow($raio, 2.00);
+function calcularAreaTerreno($largura, $comprimento) {
+	$area = $largura * $comprimento; 
+	return $area;
+}
 
-printf("A=%.4f\n", $area);
+echo calcularAreaTerreno(30, 50) . PHP_EOL;
 
 ?>
