@@ -7,14 +7,19 @@
 	<body>
 		<?php
 
-			$idade = 14;
-			$peso = 30;
-
-			if ($idade > 16 && $idade < 69 && $peso >= 50) {
-				echo "Atende aos requisitos";
-			} else {
-				echo "Nao atente aos requisitos";
+			$var;
+			switch($var) {
+				case 1:
+					echo 'Entrou no case 1';
+					break;
+				case 2:
+					echo 'Entrou no case 2';
+					break;
+				default:
+					echo 'Valor default <br/>';
+					break;
 			}
+			var_dump($var);
 
 		?>
 
