@@ -122,4 +122,7 @@ SELECT estado, COUNT(*) AS total_por_estado FROM tb_cursos GROUP BY estado HAVIN
 SELECT estado, COUNT(*) AS total_por_estado FROM tb_cursos GROUP BY estado HAVING estado IN('MG', 'SP') AND total_por_estado >= 4;
 SELECT estado, COUNT(*) AS total_por_estado FROM tb_cursos WHERE interesse != 'Esporte' GROUP BY estado HAVING total_por_estado > 3;
 
-
+/* UPDATE - Atualizando registros : Subconjunto do SQL - DML(data manipulation language) */
+UPDATE tb_alunos SET nome = 'João' WHERE id_aluno = 13;
+UPDATE tb_alunos SET nome = 'João' WHERE idade = 80;
+UPDATE tb_alunos SET interesse = 'Saúde' WHERE idade >= 80;
