@@ -114,6 +114,12 @@ SELECT COUNT(*) FROM tb_cursos WHERE ativo = FALSE
 /* SELECT - Agrupando selecao de registros (GROUP BY)*/
 SELECT * FROM tb_cursos GROUP BY interece;
 SELECT *, COUNT(*) AS total_por_interece FROM tb_cursos GROUP BY interece;
-SELECT estado, count(*) AS total_por_estado FROM tb_cursos GROUP BY estado;
+SELECT estado, COUNT(*) AS total_por_estado FROM tb_cursos GROUP BY estado;
+
+/* SELECT - Filtrando selecoes agrupadas (HAVING) */
+SELECT estado, COUNT(*) AS total_por_estado FROM tb_cursos GROUP BY estado HAVING total_por_estado >= 5;
+SELECT estado, COUNT(*) AS total_por_estado FROM tb_cursos GROUP BY estado HAVING estado IN('MG', 'SP');
+SELECT estado, COUNT(*) AS total_por_estado FROM tb_cursos GROUP BY estado HAVING estado IN('MG', 'SP') AND total_por_estado >= 4;
+SELECT estado, COUNT(*) AS total_por_estado FROM tb_cursos WHERE interesse != 'Esporte' GROUP BY estado HAVING total_por_estado > 3;
 
 
