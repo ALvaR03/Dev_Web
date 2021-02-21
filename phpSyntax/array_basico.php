@@ -7,6 +7,11 @@
 	<body>
 		
 		<?php
+			$listaCarros = array('Fiat', 'Renout', 'Hynday');
+			echo '<pre>';
+				var_dump($listaCarros);
+			echo '</pre>';
+			echo $listaCarros[1];
 			//sequencias (numericos)
 			//$lista_frutas = array("Banana", "Maca", "Morarango", "Uva");
 			/*
