@@ -126,3 +126,7 @@ SELECT estado, COUNT(*) AS total_por_estado FROM tb_cursos WHERE interesse != 'E
 UPDATE tb_alunos SET nome = 'João' WHERE id_aluno = 13;
 UPDATE tb_alunos SET nome = 'João' WHERE idade = 80;
 UPDATE tb_alunos SET interesse = 'Saúde' WHERE idade >= 80;
+
+/* DELETE - Excluindo registros */
+DELETE FROM tb_alunos WHERE id_aluno = 5;
+DELETE FROM tb_alunos WHERE idade IN(10, 18, 22, 28,34) AND interesse = 'Esporte';
